@@ -1,0 +1,14 @@
+import random
+
+a = list(random.sample(range(30), 10 + random.randrange(4)))
+b = list(random.sample(range(40), 10 + random.randrange(6)))
+
+c = []
+
+for x in a:
+  if x in b:
+    c.append(x)
+
+print(a)
+print(b)
+print(c)
